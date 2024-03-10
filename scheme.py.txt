@@ -1,0 +1,27 @@
+3.
+
+1. Identify database and installing database driver package
+2.Import package
+3.Create Connection Object
+4. Using connection Object create Cursor Object
+5.Using Cursor object execute queries
+
+pip install mysql-connector-python
+
+
+import mysql.connector as m 
+
+con_obj=m.connect(user='username',passwword=''password',,host='host')
+cur_obj=con)obj.execute(create table database.product (
+        Id INT PRIMARY KEY,
+        Name VARCHAR(255),
+        Description TEXT,
+        SKU VARCHAR(50),
+        Category_Id INT,
+        Inventory_Id INT,
+        Price DECIMAL(10, 2),
+        Discount_Id INT,
+        Created_At TIMESTAMP,
+        Modified_At TIMESTAMP,
+        Deleted_At TIMESTAMP)
+print(cur_obj)

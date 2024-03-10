@@ -1,0 +1,4 @@
+1. The relationship between the "Product" and "Product_Category" entities from the above diagram is one-to-many Relationship.
+
+2. By giving foreign key constraint on the "category_id" column in the "Product" table.When inserting records in the "Product" table, include validation checks to verify that the assigned "category_id" exists in the "Product_Category".
+By foreign key constraints, validation checks it can ensure that each product in the "Product" table has a valid category assigned to it.
